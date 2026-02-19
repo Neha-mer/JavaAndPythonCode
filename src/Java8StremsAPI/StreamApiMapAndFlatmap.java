@@ -27,6 +27,7 @@ StreamApiMapAndFlatmap {
         List<String> letters = words.stream()
                 .flatMap(word -> Arrays.stream(word.split("")))
                 .collect(Collectors.toList());
+        
 
         System.out.println(letters);
     }
